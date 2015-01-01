@@ -22,7 +22,6 @@
 
 -(void)animateShow
 {
-    self.popupView.clipsToBounds=YES;
     UIImageView* imageView=[self snapshotImageView];
     self.popupView.bounds=CGRectMake(0, 0, _size.width*self.fromScale, _size.height*self.fromScale);
     self.popupView.contentView.hidden=YES;
@@ -34,7 +33,7 @@
     self.popupView.alpha=0;
     
     [UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0 options:0 animations:^{
-        self.popupView.maskView.alpha=0.5;
+        self.popupView.maskView.alpha=0.2;
         self.popupView.alpha=1;
         self.popupView.center=self.toCenter;
         self.popupView.bounds=CGRectMake(0, 0, _size.width, _size.height);

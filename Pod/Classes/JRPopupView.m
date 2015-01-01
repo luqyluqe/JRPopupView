@@ -31,10 +31,15 @@
         self.contentView.layer.cornerRadius=configuration.cornerRadius;
         self.configuration=configuration;
         self.maskView=[[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-        self.maskView.backgroundColor=[UIColor grayColor];
+        self.maskView.backgroundColor=configuration.maskViewColor?:[UIColor grayColor];
         UITapGestureRecognizer* tapRecog=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(maskViewTapped:)];
         [self.maskView addGestureRecognizer:tapRecog];
         self.configuration.animation.popupView=self;
+        self.layer.shadowOpacity=configuration.shadowOpacity;
+        self.layer.shadowRadius=configuration.shadowRadius;
+        if (configuration.shadowColor) {
+            self.layer.shadowColor=configuration.shadowColor.CGColor;
+        }
     }
     return self;
 }

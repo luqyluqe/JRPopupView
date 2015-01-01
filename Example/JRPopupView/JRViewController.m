@@ -37,10 +37,10 @@
     JRPopupViewConfiguration* config=[JRPopupViewConfiguration defaultConfiguration];
     JRPopupViewAnimationObject0* animation0=[JRPopupViewAnimationObject0 new];
     JRPopupViewAnimationObject1* animation1=[JRPopupViewAnimationObject1 new];
-    animation1.anchor=CGPointMake(150, 0);
+    animation1.anchor=CGPointMake(150, 20);
     animation1.fromScale=0.1;
-    animation1.toCenter=CGPointMake(150, 150);
-    config.animation=animation0;
+    animation1.toCenter=CGPointMake(150, 200);
+    config.animation=animation1;
     self.popupView=[[JRPopupView alloc] initWithContentView:contentView configuration:config];
 }
 
