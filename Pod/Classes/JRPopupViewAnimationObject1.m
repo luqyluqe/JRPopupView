@@ -101,7 +101,7 @@
     self.popupView.bounds=CGRectMake(0, 0, _size.width, _size.height);
     self.popupView.contentView.frame=CGRectMake(0, 0, _size.width, _size.height);
     self.popupView.clipsToBounds=NO;
-    self.popupView.contentView.hidden=YES;
+    self.popupView.contentView.hidden=NO;
 }
 
 @end
