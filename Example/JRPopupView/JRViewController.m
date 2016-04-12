@@ -24,6 +24,14 @@
     self.view.backgroundColor=[UIColor whiteColor];
     UIView* contentView=[[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 300)];
     contentView.backgroundColor=[UIColor whiteColor];
+    UILabel* label=[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 40)];
+    label.textAlignment=NSTextAlignmentCenter;
+    CGRect contentViewBounds=contentView.bounds;
+    CGPoint contentViewOrigin=contentViewBounds.origin;
+    CGSize contentViewSize=contentViewBounds.size;
+    label.center=CGPointMake(contentViewOrigin.x+contentViewSize.width/2, contentViewOrigin.y+contentViewSize.height/2);
+    label.text=@"JRPopupView";
+    [contentView addSubview:label];
     self.popupView=[[JRPopupView alloc] initWithContentView:contentView];
 }
 
