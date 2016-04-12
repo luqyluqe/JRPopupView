@@ -1,0 +1,6 @@
+framework module JRPopupView {
+  umbrella header "JRPopupView-umbrella.h"
+
+  export *
+  module * { export * }
+}

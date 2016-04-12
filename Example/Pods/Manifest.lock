@@ -1,0 +1,21 @@
+PODS:
+  - FBSnapshotTestCase (2.1.0):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.0)
+  - FBSnapshotTestCase/Core (2.1.0)
+  - FBSnapshotTestCase/SwiftSupport (2.1.0):
+    - FBSnapshotTestCase/Core
+  - JRPopupView (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - JRPopupView (from `../`)
+
+EXTERNAL SOURCES:
+  JRPopupView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 366ecd378511d7716c79991cd8067d1eed23578d
+  JRPopupView: 21b63ff09aca336464488cc5137d5f6fabb91146
+
+COCOAPODS: 0.39.0

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "JRPopupView"
   s.version          = "0.1.0"
-  s.summary          = "A short description of JRPopupView."
+  s.summary          = "Popup view."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,13 +17,14 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+The popup view.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/JRPopupView"
+  s.homepage         = "https://github.com/luqyluqe/JRPopupView"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "luqyluqe" => "luqy.luqe@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/JRPopupView.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/luqyluqe/JRPopupView.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'

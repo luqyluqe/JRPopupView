@@ -22,6 +22,10 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		A98BD2611A54CB2A0012E153 /* JRPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = A98BD2551A54CB2A0012E153 /* JRPopupView.m */; };
+		A98BD2621A54CB2A0012E153 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A98BD2581A54CB2A0012E153 /* Info.plist */; };
+		A98BD2631A54CB2A0012E153 /* JRPopupView.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A98BD25A1A54CB2A0012E153 /* JRPopupView.xcconfig */; };
+		A98BD2641A54CB2A0012E153 /* JRPopupView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A98BD25B1A54CB2A0012E153 /* JRPopupView-dummy.m */; };
 		DCA5FF29CE239A75659283DB /* Pods_JRPopupView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2345588CAC0FAB905DB8E2AF /* Pods_JRPopupView_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +68,14 @@
 		78DF409E0760F1B6BA4B1574 /* Pods_JRPopupView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JRPopupView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8750D3810165B58D1B483AE6 /* Pods-JRPopupView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRPopupView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JRPopupView_Tests/Pods-JRPopupView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A98BD2541A54CB2A0012E153 /* JRPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPopupView.h; sourceTree = "<group>"; };
+		A98BD2551A54CB2A0012E153 /* JRPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPopupView.m; sourceTree = "<group>"; };
+		A98BD2581A54CB2A0012E153 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A98BD2591A54CB2A0012E153 /* JRPopupView.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = JRPopupView.modulemap; sourceTree = "<group>"; };
+		A98BD25A1A54CB2A0012E153 /* JRPopupView.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = JRPopupView.xcconfig; sourceTree = "<group>"; };
+		A98BD25B1A54CB2A0012E153 /* JRPopupView-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JRPopupView-dummy.m"; sourceTree = "<group>"; };
+		A98BD25C1A54CB2A0012E153 /* JRPopupView-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JRPopupView-prefix.pch"; sourceTree = "<group>"; };
+		A98BD25D1A54CB2A0012E153 /* JRPopupView-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JRPopupView-umbrella.h"; sourceTree = "<group>"; };
 		B2253B58F898AC653A87ADFE /* Pods-JRPopupView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRPopupView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JRPopupView_Example/Pods-JRPopupView_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +108,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				A98BD2601A54CB2A0012E153 /* Development Pods */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for JRPopupView */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -180,6 +193,56 @@
 				2D3DDC0F9B3086D81C94063D /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		A98BD2561A54CB2A0012E153 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A98BD2541A54CB2A0012E153 /* JRPopupView.h */,
+				A98BD2551A54CB2A0012E153 /* JRPopupView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A98BD2571A54CB2A0012E153 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A98BD2561A54CB2A0012E153 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		A98BD25E1A54CB2A0012E153 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A98BD2581A54CB2A0012E153 /* Info.plist */,
+				A98BD2591A54CB2A0012E153 /* JRPopupView.modulemap */,
+				A98BD25A1A54CB2A0012E153 /* JRPopupView.xcconfig */,
+				A98BD25B1A54CB2A0012E153 /* JRPopupView-dummy.m */,
+				A98BD25C1A54CB2A0012E153 /* JRPopupView-prefix.pch */,
+				A98BD25D1A54CB2A0012E153 /* JRPopupView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JRPopupView";
+			sourceTree = "<group>";
+		};
+		A98BD25F1A54CB2A0012E153 /* JRPopupView */ = {
+			isa = PBXGroup;
+			children = (
+				A98BD2571A54CB2A0012E153 /* Pod */,
+				A98BD25E1A54CB2A0012E153 /* Support Files */,
+			);
+			name = JRPopupView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A98BD2601A54CB2A0012E153 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A98BD25F1A54CB2A0012E153 /* JRPopupView */,
+			);
+			name = "Development Pods";
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		F3F88B300EA1EEEAB3426D36 /* Pods */ = {
@@ -276,6 +339,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A98BD2631A54CB2A0012E153 /* JRPopupView.xcconfig in Resources */,
+				A98BD2621A54CB2A0012E153 /* Info.plist in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -392,7 +457,9 @@
 			files = (
 				6003F59E195388D20070C39A /* JRAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* JRViewController.m in Sources */,
+				A98BD2641A54CB2A0012E153 /* JRPopupView-dummy.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				A98BD2611A54CB2A0012E153 /* JRPopupView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
