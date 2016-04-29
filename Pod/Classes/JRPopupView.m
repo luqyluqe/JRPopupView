@@ -26,19 +26,15 @@
 -(instancetype)initWithContentView:(UIView *)contentView configuration:(JRPopupViewConfiguration *)configuration
 {
     if (self=[super initWithFrame:contentView.frame]) {
+        [self addSubview:contentView];
+        self.contentView=contentView;
+        self.contentView.layer.cornerRadius=configuration.cornerRadius;
         self.configuration=configuration;
-
-        self.configuration.animation.popupView=self;
-        
         self.maskView=[[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
         self.maskView.backgroundColor=[UIColor grayColor];
         UITapGestureRecognizer* tapRecog=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(maskViewTapped:)];
         [self.maskView addGestureRecognizer:tapRecog];
-        
-        [self addSubview:contentView];
-        self.contentView=contentView;
-        
-        self.contentView.layer.cornerRadius=configuration.cornerRadius;
+        self.configuration.animation.popupView=self;
     }
     return self;
 }

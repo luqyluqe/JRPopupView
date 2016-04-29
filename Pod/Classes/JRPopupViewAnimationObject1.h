@@ -12,5 +12,6 @@
 
 @property (nonatomic,assign) CGPoint anchor;
 @property (nonatomic,assign) CGFloat fromScale;
+@property (nonatomic,assign) CGPoint toCenter;
 
 @end

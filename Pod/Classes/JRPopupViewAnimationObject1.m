@@ -11,54 +11,56 @@
 
 @implementation JRPopupViewAnimationObject1
 {
-    CGRect _frame;
+    CGSize _size;
 }
 
 -(void)setPopupView:(JRPopupView *)popupView
 {
     [super setPopupView:popupView];
-    _frame=popupView.frame;
+    _size=popupView.bounds.size;
 }
 
 -(void)animateShow
 {
-    UIWindow* window=[[UIApplication sharedApplication] keyWindow];
-    
+    self.popupView.clipsToBounds=YES;
     UIImageView* imageView=[self snapshotImageView];
-    CGSize size=self.popupView.bounds.size;
-    imageView.bounds=CGRectMake(0, 0, size.width*1.5, size.height*1.5);
+    self.popupView.bounds=CGRectMake(0, 0, _size.width*self.fromScale, _size.height*self.fromScale);
+    self.popupView.contentView.frame=CGRectMake(0, 0, _size.width*self.fromScale, _size.height*self.fromScale);
+    imageView.frame=CGRectMake(0, 0, _size.width*self.fromScale, _size.height*self.fromScale);
     [self.popupView addSubview:imageView];
+    self.popupView.center=[self fromCenter];
     
     self.popupView.maskView.alpha=0;
-    self.popupView.frame=[self fromFrame];
     self.popupView.alpha=0;
     
     [UIView animateWithDuration:0.5 animations:^{
         self.popupView.maskView.alpha=0.5;
-        self.popupView.frame=_frame;
         self.popupView.alpha=1;
-        imageView.bounds=CGRectMake(0, 0, size.width, size.height);
+        self.popupView.center=self.toCenter;
+        self.popupView.bounds=CGRectMake(0, 0, _size.width, _size.height);
+        self.popupView.contentView.frame=CGRectMake(0, 0, _size.width, _size.height);
+        imageView.frame=CGRectMake(0, 0, _size.width, _size.height);
     } completion:^(BOOL finished) {
         [imageView removeFromSuperview];
     }];
 }
 
--(void)animateDismissWithCompletion:(void (^)())completion
+-(void)animateDismissWithCompletion:(void(^)())completion
 {
-    UIWindow* window=[[UIApplication sharedApplication] keyWindow];
-    
     UIImageView* imageView=[self snapshotImageView];
-    CGSize size=self.popupView.bounds.size;
-    imageView.bounds=CGRectMake(0, 0, size.width, size.height);
+    imageView.frame=CGRectMake(0, 0, _size.width, _size.height);
     [self.popupView addSubview:imageView];
     
     [UIView animateWithDuration:0.5 animations:^{
         self.popupView.maskView.alpha=0;
-        self.popupView.center=CGPointMake(window.center.x, window.center.y-100);
+        self.popupView.center=[self fromCenter];
+        self.popupView.bounds=CGRectMake(0, 0, _size.width*self.fromScale, _size.height*self.fromScale);
+        self.popupView.contentView.frame=CGRectMake(0, 0, _size.width*self.fromScale, _size.height*self.fromScale);
+        imageView.frame=CGRectMake(0, 0, _size.width*self.fromScale, _size.height*self.fromScale);
         self.popupView.alpha=0;
-        imageView.bounds=CGRectMake(0, 0, size.width*1.5, size.height*1.5);
     } completion:^(BOOL finished) {
         [imageView removeFromSuperview];
+        [self reset];
         completion();
     }];
 }
@@ -71,7 +73,7 @@
     CGSize size=frame.size;
     CGPoint origin=frame.origin;
     fromSize.width=size.width*self.fromScale;
-    fromSize.height*=size.height*self.fromScale;
+    fromSize.height=size.height*self.fromScale;
     CGPoint vector=CGPointMake(origin.x-self.anchor.x, origin.y-self.anchor.y);
     vector.x*=self.fromScale;
     vector.y*=self.fromScale;
@@ -81,6 +83,23 @@
     fromFrame.size=fromSize;
     fromFrame.origin=fromOrigin;
     return fromFrame;
+}
+
+-(CGPoint)fromCenter
+{
+    CGPoint center=self.popupView.center;
+    CGPoint vector=CGPointMake(center.x-self.anchor.x, center.y-self.anchor.y);
+    vector.x*=self.fromScale;
+    vector.y*=self.fromScale;
+    CGPoint fromCenter=CGPointMake(self.anchor.x+vector.x, self.anchor.y+vector.y);
+    return fromCenter;
+}
+
+-(void)reset
+{
+    self.popupView.bounds=CGRectMake(0, 0, _size.width, _size.height);
+    self.popupView.contentView.frame=CGRectMake(0, 0, _size.width, _size.height);
+    self.popupView.clipsToBounds=NO;
 }
 
 @end

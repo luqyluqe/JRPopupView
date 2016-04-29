@@ -8,6 +8,8 @@
 
 #import "JRViewController.h"
 #import "JRPopupView.h"
+#import "JRPopupViewAnimationObject0.h"
+#import "JRPopupViewAnimationObject1.h"
 
 @interface JRViewController ()
 
@@ -32,7 +34,13 @@
     label.center=CGPointMake(contentViewOrigin.x+contentViewSize.width/2, contentViewOrigin.y+contentViewSize.height/2);
     label.text=@"JRPopupView";
     [contentView addSubview:label];
-    JRPopupViewConfiguration*config=[JRPopupViewConfiguration defaultConfiguration];
+    JRPopupViewConfiguration* config=[JRPopupViewConfiguration defaultConfiguration];
+//    JRPopupViewAnimationObject0* animation0=[JRPopupViewAnimationObject0 new];
+    JRPopupViewAnimationObject1* animation1=[JRPopupViewAnimationObject1 new];
+    animation1.anchor=CGPointMake(150, 0);
+    animation1.fromScale=0.1;
+    animation1.toCenter=CGPointMake(150, 150);
+    config.animation=animation1;
     self.popupView=[[JRPopupView alloc] initWithContentView:contentView configuration:config];
 }
 
