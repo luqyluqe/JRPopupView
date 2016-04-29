@@ -50,6 +50,7 @@
     UIImageView* imageView=[self snapshotImageView];
     imageView.frame=CGRectMake(0, 0, _size.width, _size.height);
     [self.popupView addSubview:imageView];
+    self.popupView.contentView.hidden=YES;
     
     [UIView animateWithDuration:0.5 animations:^{
         self.popupView.maskView.alpha=0;
