@@ -9,12 +9,9 @@
 #import "JRPopupView.h"
 #import "JRPopupViewAnimationObject.h"
 #import "JRPopupViewAnimationObject0.h"
-
-#define SCALE 1.5
+#import "JRPopupViewAnimationObject1.h"
 
 @interface JRPopupView ()
-
-@property (nonatomic,strong) JRPopupViewAnimationObject* animationObject;
 
 @end
 
@@ -30,18 +27,8 @@
 {
     if (self=[super initWithFrame:contentView.frame]) {
         self.configuration=configuration;
-        switch (self.configuration.animation) {
-            case JRPopupViewAnimationCustom:
-                break;
-            case JRPopupViewAnimation0:
-                self.animationObject=[[JRPopupViewAnimationObject0 alloc] init];
-                self.animationObject.popupView=self;
-                break;
-            case JRPopupViewAnimation1:
-                break;
-            default:
-                break;
-        }
+
+        self.configuration.animation.popupView=self;
         
         self.maskView=[[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
         self.maskView.backgroundColor=[UIColor grayColor];
@@ -63,12 +50,12 @@
     [window addSubview:self.maskView];
     [window addSubview:self];
     
-    [self.animationObject animateShow];
+    [self.configuration.animation animateShow];
 }
 
 -(void)dismiss
 {
-    [self.animationObject animateDismissWithCompletion:^{
+    [self.configuration.animation animateDismissWithCompletion:^{
         [self.maskView removeFromSuperview];
         [self removeFromSuperview];
     }];

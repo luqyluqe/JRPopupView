@@ -7,8 +7,12 @@
 //
 
 #import "JRPopupViewAnimationObject.h"
+#import "JRPopupView.h"
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wincomplete-implementation"
 @implementation JRPopupViewAnimationObject
+#pragma clang diagnostic pop
 
 -(UIImageView*)snapshotImageView
 {

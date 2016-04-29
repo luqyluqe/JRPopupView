@@ -7,6 +7,7 @@
 //
 
 #import "JRPopupViewAnimationObject0.h"
+#import "JRPopupView.h"
 
 @implementation JRPopupViewAnimationObject0
 

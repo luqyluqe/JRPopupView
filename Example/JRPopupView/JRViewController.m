@@ -32,7 +32,8 @@
     label.center=CGPointMake(contentViewOrigin.x+contentViewSize.width/2, contentViewOrigin.y+contentViewSize.height/2);
     label.text=@"JRPopupView";
     [contentView addSubview:label];
-    self.popupView=[[JRPopupView alloc] initWithContentView:contentView];
+    JRPopupViewConfiguration*config=[JRPopupViewConfiguration defaultConfiguration];
+    self.popupView=[[JRPopupView alloc] initWithContentView:contentView configuration:config];
 }
 
 -(void)viewDidAppear:(BOOL)animated

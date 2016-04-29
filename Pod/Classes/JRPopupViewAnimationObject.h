@@ -6,7 +6,9 @@
 //
 //
 
-#import "JRPopupView.h"
+#import <UIKit/UIKit.h>
+
+@class JRPopupView;
 
 @interface JRPopupViewAnimationObject : NSObject
 

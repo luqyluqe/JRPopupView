@@ -7,6 +7,7 @@
 //
 
 #import "JRPopupViewConfiguration.h"
+#import "JRPopupViewAnimationObject0.h"
 
 @implementation JRPopupViewConfiguration
 
@@ -14,7 +15,7 @@
 {
     JRPopupViewConfiguration* config=[[JRPopupViewConfiguration alloc] init];
     config.cornerRadius=8;
-    config.animation=JRPopupViewAnimation0;
+    config.animation=[JRPopupViewAnimationObject0 new];
     return config;
 }
 
