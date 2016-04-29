@@ -25,7 +25,7 @@
     self.popupView.clipsToBounds=YES;
     UIImageView* imageView=[self snapshotImageView];
     self.popupView.bounds=CGRectMake(0, 0, _size.width*self.fromScale, _size.height*self.fromScale);
-    self.popupView.contentView.frame=CGRectMake(0, 0, _size.width*self.fromScale, _size.height*self.fromScale);
+    self.popupView.contentView.hidden=YES;
     imageView.frame=CGRectMake(0, 0, _size.width*self.fromScale, _size.height*self.fromScale);
     [self.popupView addSubview:imageView];
     self.popupView.center=[self fromCenter];
@@ -38,10 +38,10 @@
         self.popupView.alpha=1;
         self.popupView.center=self.toCenter;
         self.popupView.bounds=CGRectMake(0, 0, _size.width, _size.height);
-        self.popupView.contentView.frame=CGRectMake(0, 0, _size.width, _size.height);
         imageView.frame=CGRectMake(0, 0, _size.width, _size.height);
     } completion:^(BOOL finished) {
         [imageView removeFromSuperview];
+        self.popupView.contentView.hidden=NO;
     }];
 }
 
