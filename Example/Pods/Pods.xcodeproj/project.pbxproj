@@ -27,42 +27,53 @@
 		9B017D4CBA217226649A1C5981B14631 /* Pods-JRPopupView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF5253333691011CD36CDD6D067E09E /* Pods-JRPopupView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A38506CF4700DA06E89C871D8388D83E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2393D1A899C707F79A64672C46ED238F /* UIKit.framework */; };
 		A7F9AAC65FC2D87C34EA9D6A5ACB4401 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = F2B58D5BA3EB09C98A4C815311C792DC /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A98BD23A1A54C8A70012E153 /* JRPopupView.h in Headers */ = {isa = PBXBuildFile; fileRef = A98BD2381A54C8A70012E153 /* JRPopupView.h */; };
-		A98BD23B1A54C8A70012E153 /* JRPopupView.h in Headers */ = {isa = PBXBuildFile; fileRef = A98BD2381A54C8A70012E153 /* JRPopupView.h */; };
-		A98BD23C1A54C8A70012E153 /* JRPopupView.h in Headers */ = {isa = PBXBuildFile; fileRef = A98BD2381A54C8A70012E153 /* JRPopupView.h */; };
-		A98BD23D1A54C8A70012E153 /* JRPopupView.h in Headers */ = {isa = PBXBuildFile; fileRef = A98BD2381A54C8A70012E153 /* JRPopupView.h */; };
-		A98BD23E1A54C8A70012E153 /* JRPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = A98BD2391A54C8A70012E153 /* JRPopupView.m */; };
-		A98BD23F1A54C8A70012E153 /* JRPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = A98BD2391A54C8A70012E153 /* JRPopupView.m */; };
-		A98BD2401A54C8A70012E153 /* JRPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = A98BD2391A54C8A70012E153 /* JRPopupView.m */; };
-		A98BD2411A54C8A70012E153 /* JRPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = A98BD2391A54C8A70012E153 /* JRPopupView.m */; };
-		A98BD2421A54C8A70012E153 /* JRPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = A98BD2391A54C8A70012E153 /* JRPopupView.m */; };
-		A98BD2671CBCB7C00012E153 /* JRPopupViewConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = A98BD2651CBCB7C00012E153 /* JRPopupViewConfiguration.h */; };
-		A98BD2681CBCB7C00012E153 /* JRPopupViewConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = A98BD2651CBCB7C00012E153 /* JRPopupViewConfiguration.h */; };
-		A98BD2691CBCB7C00012E153 /* JRPopupViewConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = A98BD2651CBCB7C00012E153 /* JRPopupViewConfiguration.h */; };
-		A98BD26A1CBCB7C00012E153 /* JRPopupViewConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = A98BD2651CBCB7C00012E153 /* JRPopupViewConfiguration.h */; };
-		A98BD26B1CBCB7C00012E153 /* JRPopupViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A98BD2661CBCB7C00012E153 /* JRPopupViewConfiguration.m */; };
-		A98BD26C1CBCB7C00012E153 /* JRPopupViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A98BD2661CBCB7C00012E153 /* JRPopupViewConfiguration.m */; };
-		A98BD26D1CBCB7C00012E153 /* JRPopupViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A98BD2661CBCB7C00012E153 /* JRPopupViewConfiguration.m */; };
-		A98BD26E1CBCB7C00012E153 /* JRPopupViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A98BD2661CBCB7C00012E153 /* JRPopupViewConfiguration.m */; };
-		A98BD26F1CBCB7C00012E153 /* JRPopupViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A98BD2661CBCB7C00012E153 /* JRPopupViewConfiguration.m */; };
-		A9906B511CD2FC6A000DCDFE /* JRPopupViewAnimationObject.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B4F1CD2FC6A000DCDFE /* JRPopupViewAnimationObject.h */; };
-		A9906B521CD2FC6A000DCDFE /* JRPopupViewAnimationObject.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B4F1CD2FC6A000DCDFE /* JRPopupViewAnimationObject.h */; };
-		A9906B531CD2FC6A000DCDFE /* JRPopupViewAnimationObject.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B4F1CD2FC6A000DCDFE /* JRPopupViewAnimationObject.h */; };
-		A9906B541CD2FC6A000DCDFE /* JRPopupViewAnimationObject.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B4F1CD2FC6A000DCDFE /* JRPopupViewAnimationObject.h */; };
-		A9906B551CD2FC6A000DCDFE /* JRPopupViewAnimationObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B501CD2FC6A000DCDFE /* JRPopupViewAnimationObject.m */; };
-		A9906B561CD2FC6A000DCDFE /* JRPopupViewAnimationObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B501CD2FC6A000DCDFE /* JRPopupViewAnimationObject.m */; };
-		A9906B571CD2FC6A000DCDFE /* JRPopupViewAnimationObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B501CD2FC6A000DCDFE /* JRPopupViewAnimationObject.m */; };
-		A9906B581CD2FC6A000DCDFE /* JRPopupViewAnimationObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B501CD2FC6A000DCDFE /* JRPopupViewAnimationObject.m */; };
-		A9906B591CD2FC6A000DCDFE /* JRPopupViewAnimationObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B501CD2FC6A000DCDFE /* JRPopupViewAnimationObject.m */; };
-		A9906B671CD2FF08000DCDFE /* JRPopupViewAnimationObject0.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B651CD2FF08000DCDFE /* JRPopupViewAnimationObject0.h */; };
-		A9906B681CD2FF08000DCDFE /* JRPopupViewAnimationObject0.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B651CD2FF08000DCDFE /* JRPopupViewAnimationObject0.h */; };
-		A9906B691CD2FF08000DCDFE /* JRPopupViewAnimationObject0.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B651CD2FF08000DCDFE /* JRPopupViewAnimationObject0.h */; };
-		A9906B6A1CD2FF08000DCDFE /* JRPopupViewAnimationObject0.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B651CD2FF08000DCDFE /* JRPopupViewAnimationObject0.h */; };
-		A9906B6B1CD2FF08000DCDFE /* JRPopupViewAnimationObject0.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B661CD2FF08000DCDFE /* JRPopupViewAnimationObject0.m */; };
-		A9906B6C1CD2FF08000DCDFE /* JRPopupViewAnimationObject0.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B661CD2FF08000DCDFE /* JRPopupViewAnimationObject0.m */; };
-		A9906B6D1CD2FF08000DCDFE /* JRPopupViewAnimationObject0.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B661CD2FF08000DCDFE /* JRPopupViewAnimationObject0.m */; };
-		A9906B6E1CD2FF08000DCDFE /* JRPopupViewAnimationObject0.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B661CD2FF08000DCDFE /* JRPopupViewAnimationObject0.m */; };
-		A9906B6F1CD2FF08000DCDFE /* JRPopupViewAnimationObject0.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B661CD2FF08000DCDFE /* JRPopupViewAnimationObject0.m */; };
+		A9906B871CD30B80000DCDFE /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = A9906B7C1CD30B80000DCDFE /* .gitkeep */; };
+		A9906B881CD30B80000DCDFE /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = A9906B7C1CD30B80000DCDFE /* .gitkeep */; };
+		A9906B891CD30B80000DCDFE /* JRPopupView.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B7D1CD30B80000DCDFE /* JRPopupView.h */; };
+		A9906B8A1CD30B80000DCDFE /* JRPopupView.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B7D1CD30B80000DCDFE /* JRPopupView.h */; };
+		A9906B8B1CD30B80000DCDFE /* JRPopupView.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B7D1CD30B80000DCDFE /* JRPopupView.h */; };
+		A9906B8C1CD30B80000DCDFE /* JRPopupView.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B7D1CD30B80000DCDFE /* JRPopupView.h */; };
+		A9906B8D1CD30B80000DCDFE /* JRPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B7E1CD30B80000DCDFE /* JRPopupView.m */; };
+		A9906B8E1CD30B80000DCDFE /* JRPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B7E1CD30B80000DCDFE /* JRPopupView.m */; };
+		A9906B8F1CD30B80000DCDFE /* JRPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B7E1CD30B80000DCDFE /* JRPopupView.m */; };
+		A9906B901CD30B80000DCDFE /* JRPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B7E1CD30B80000DCDFE /* JRPopupView.m */; };
+		A9906B911CD30B80000DCDFE /* JRPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B7E1CD30B80000DCDFE /* JRPopupView.m */; };
+		A9906B921CD30B80000DCDFE /* JRPopupViewAnimationObject.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B7F1CD30B80000DCDFE /* JRPopupViewAnimationObject.h */; };
+		A9906B931CD30B80000DCDFE /* JRPopupViewAnimationObject.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B7F1CD30B80000DCDFE /* JRPopupViewAnimationObject.h */; };
+		A9906B941CD30B80000DCDFE /* JRPopupViewAnimationObject.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B7F1CD30B80000DCDFE /* JRPopupViewAnimationObject.h */; };
+		A9906B951CD30B80000DCDFE /* JRPopupViewAnimationObject.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B7F1CD30B80000DCDFE /* JRPopupViewAnimationObject.h */; };
+		A9906B961CD30B80000DCDFE /* JRPopupViewAnimationObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B801CD30B80000DCDFE /* JRPopupViewAnimationObject.m */; };
+		A9906B971CD30B80000DCDFE /* JRPopupViewAnimationObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B801CD30B80000DCDFE /* JRPopupViewAnimationObject.m */; };
+		A9906B981CD30B80000DCDFE /* JRPopupViewAnimationObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B801CD30B80000DCDFE /* JRPopupViewAnimationObject.m */; };
+		A9906B991CD30B80000DCDFE /* JRPopupViewAnimationObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B801CD30B80000DCDFE /* JRPopupViewAnimationObject.m */; };
+		A9906B9A1CD30B80000DCDFE /* JRPopupViewAnimationObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B801CD30B80000DCDFE /* JRPopupViewAnimationObject.m */; };
+		A9906B9B1CD30B80000DCDFE /* JRPopupViewAnimationObject0.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B811CD30B80000DCDFE /* JRPopupViewAnimationObject0.h */; };
+		A9906B9C1CD30B80000DCDFE /* JRPopupViewAnimationObject0.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B811CD30B80000DCDFE /* JRPopupViewAnimationObject0.h */; };
+		A9906B9D1CD30B80000DCDFE /* JRPopupViewAnimationObject0.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B811CD30B80000DCDFE /* JRPopupViewAnimationObject0.h */; };
+		A9906B9E1CD30B80000DCDFE /* JRPopupViewAnimationObject0.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B811CD30B80000DCDFE /* JRPopupViewAnimationObject0.h */; };
+		A9906B9F1CD30B80000DCDFE /* JRPopupViewAnimationObject0.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B821CD30B80000DCDFE /* JRPopupViewAnimationObject0.m */; };
+		A9906BA01CD30B80000DCDFE /* JRPopupViewAnimationObject0.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B821CD30B80000DCDFE /* JRPopupViewAnimationObject0.m */; };
+		A9906BA11CD30B80000DCDFE /* JRPopupViewAnimationObject0.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B821CD30B80000DCDFE /* JRPopupViewAnimationObject0.m */; };
+		A9906BA21CD30B80000DCDFE /* JRPopupViewAnimationObject0.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B821CD30B80000DCDFE /* JRPopupViewAnimationObject0.m */; };
+		A9906BA31CD30B80000DCDFE /* JRPopupViewAnimationObject0.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B821CD30B80000DCDFE /* JRPopupViewAnimationObject0.m */; };
+		A9906BA41CD30B80000DCDFE /* JRPopupViewAnimationObject1.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B831CD30B80000DCDFE /* JRPopupViewAnimationObject1.h */; };
+		A9906BA51CD30B80000DCDFE /* JRPopupViewAnimationObject1.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B831CD30B80000DCDFE /* JRPopupViewAnimationObject1.h */; };
+		A9906BA61CD30B80000DCDFE /* JRPopupViewAnimationObject1.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B831CD30B80000DCDFE /* JRPopupViewAnimationObject1.h */; };
+		A9906BA71CD30B80000DCDFE /* JRPopupViewAnimationObject1.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B831CD30B80000DCDFE /* JRPopupViewAnimationObject1.h */; };
+		A9906BA81CD30B80000DCDFE /* JRPopupViewAnimationObject1.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B841CD30B80000DCDFE /* JRPopupViewAnimationObject1.m */; };
+		A9906BA91CD30B80000DCDFE /* JRPopupViewAnimationObject1.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B841CD30B80000DCDFE /* JRPopupViewAnimationObject1.m */; };
+		A9906BAA1CD30B80000DCDFE /* JRPopupViewAnimationObject1.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B841CD30B80000DCDFE /* JRPopupViewAnimationObject1.m */; };
+		A9906BAB1CD30B80000DCDFE /* JRPopupViewAnimationObject1.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B841CD30B80000DCDFE /* JRPopupViewAnimationObject1.m */; };
+		A9906BAC1CD30B80000DCDFE /* JRPopupViewAnimationObject1.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B841CD30B80000DCDFE /* JRPopupViewAnimationObject1.m */; };
+		A9906BAD1CD30B80000DCDFE /* JRPopupViewConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B851CD30B80000DCDFE /* JRPopupViewConfiguration.h */; };
+		A9906BAE1CD30B80000DCDFE /* JRPopupViewConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B851CD30B80000DCDFE /* JRPopupViewConfiguration.h */; };
+		A9906BAF1CD30B80000DCDFE /* JRPopupViewConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B851CD30B80000DCDFE /* JRPopupViewConfiguration.h */; };
+		A9906BB01CD30B80000DCDFE /* JRPopupViewConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = A9906B851CD30B80000DCDFE /* JRPopupViewConfiguration.h */; };
+		A9906BB11CD30B80000DCDFE /* JRPopupViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B861CD30B80000DCDFE /* JRPopupViewConfiguration.m */; };
+		A9906BB21CD30B80000DCDFE /* JRPopupViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B861CD30B80000DCDFE /* JRPopupViewConfiguration.m */; };
+		A9906BB31CD30B80000DCDFE /* JRPopupViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B861CD30B80000DCDFE /* JRPopupViewConfiguration.m */; };
+		A9906BB41CD30B80000DCDFE /* JRPopupViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B861CD30B80000DCDFE /* JRPopupViewConfiguration.m */; };
+		A9906BB51CD30B80000DCDFE /* JRPopupViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A9906B861CD30B80000DCDFE /* JRPopupViewConfiguration.m */; };
 		AE8D7BDEF2AC1133B9B8A6A52D83EC04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31B096AB4A0164C61B63F0E59AD76C9 /* Foundation.framework */; };
 		AEBA7273A59F2B043A31661C1CB1604C /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 384A1B103C9D183D6A1C08DD450C61CA /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		BD3C7ABB0598A03B729F141633113043 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FE25CB0990A912973D24121C151E6A /* FBSnapshotTestCase.m */; };
@@ -146,14 +157,17 @@
 		99CDA4BC4D2B46DAE5241A9BA4A43FBD /* JRPopupView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JRPopupView.modulemap; sourceTree = "<group>"; };
 		A52087B1A187757D2D952CABD83DCF25 /* Pods-JRPopupView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JRPopupView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		A8E1A89B3BA68C318684FD51DF3046FC /* Pods-JRPopupView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JRPopupView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A98BD2381A54C8A70012E153 /* JRPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPopupView.h; sourceTree = "<group>"; };
-		A98BD2391A54C8A70012E153 /* JRPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPopupView.m; sourceTree = "<group>"; };
-		A98BD2651CBCB7C00012E153 /* JRPopupViewConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPopupViewConfiguration.h; sourceTree = "<group>"; };
-		A98BD2661CBCB7C00012E153 /* JRPopupViewConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPopupViewConfiguration.m; sourceTree = "<group>"; };
-		A9906B4F1CD2FC6A000DCDFE /* JRPopupViewAnimationObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPopupViewAnimationObject.h; sourceTree = "<group>"; };
-		A9906B501CD2FC6A000DCDFE /* JRPopupViewAnimationObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPopupViewAnimationObject.m; sourceTree = "<group>"; };
-		A9906B651CD2FF08000DCDFE /* JRPopupViewAnimationObject0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPopupViewAnimationObject0.h; sourceTree = "<group>"; };
-		A9906B661CD2FF08000DCDFE /* JRPopupViewAnimationObject0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPopupViewAnimationObject0.m; sourceTree = "<group>"; };
+		A9906B7C1CD30B80000DCDFE /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		A9906B7D1CD30B80000DCDFE /* JRPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPopupView.h; sourceTree = "<group>"; };
+		A9906B7E1CD30B80000DCDFE /* JRPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPopupView.m; sourceTree = "<group>"; };
+		A9906B7F1CD30B80000DCDFE /* JRPopupViewAnimationObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPopupViewAnimationObject.h; sourceTree = "<group>"; };
+		A9906B801CD30B80000DCDFE /* JRPopupViewAnimationObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPopupViewAnimationObject.m; sourceTree = "<group>"; };
+		A9906B811CD30B80000DCDFE /* JRPopupViewAnimationObject0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPopupViewAnimationObject0.h; sourceTree = "<group>"; };
+		A9906B821CD30B80000DCDFE /* JRPopupViewAnimationObject0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPopupViewAnimationObject0.m; sourceTree = "<group>"; };
+		A9906B831CD30B80000DCDFE /* JRPopupViewAnimationObject1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPopupViewAnimationObject1.h; sourceTree = "<group>"; };
+		A9906B841CD30B80000DCDFE /* JRPopupViewAnimationObject1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPopupViewAnimationObject1.m; sourceTree = "<group>"; };
+		A9906B851CD30B80000DCDFE /* JRPopupViewConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPopupViewConfiguration.h; sourceTree = "<group>"; };
+		A9906B861CD30B80000DCDFE /* JRPopupViewConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPopupViewConfiguration.m; sourceTree = "<group>"; };
 		AB005A1422537B79435FBAAC239F5E5E /* Pods-JRPopupView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JRPopupView_Example-dummy.m"; sourceTree = "<group>"; };
 		B2AD796E0811AED05EEA7E020A7947B0 /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -315,21 +329,6 @@
 			name = SwiftSupport;
 			sourceTree = "<group>";
 		};
-		6E11DDD88B8C270C58C1AAB734071398 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				A98BD2381A54C8A70012E153 /* JRPopupView.h */,
-				A98BD2391A54C8A70012E153 /* JRPopupView.m */,
-				A98BD2651CBCB7C00012E153 /* JRPopupViewConfiguration.h */,
-				A98BD2661CBCB7C00012E153 /* JRPopupViewConfiguration.m */,
-				A9906B4F1CD2FC6A000DCDFE /* JRPopupViewAnimationObject.h */,
-				A9906B501CD2FC6A000DCDFE /* JRPopupViewAnimationObject.m */,
-				A9906B651CD2FF08000DCDFE /* JRPopupViewAnimationObject0.h */,
-				A9906B661CD2FF08000DCDFE /* JRPopupViewAnimationObject0.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -363,10 +362,28 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
+		A9906B7B1CD30B80000DCDFE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A9906B7C1CD30B80000DCDFE /* .gitkeep */,
+				A9906B7D1CD30B80000DCDFE /* JRPopupView.h */,
+				A9906B7E1CD30B80000DCDFE /* JRPopupView.m */,
+				A9906B7F1CD30B80000DCDFE /* JRPopupViewAnimationObject.h */,
+				A9906B801CD30B80000DCDFE /* JRPopupViewAnimationObject.m */,
+				A9906B811CD30B80000DCDFE /* JRPopupViewAnimationObject0.h */,
+				A9906B821CD30B80000DCDFE /* JRPopupViewAnimationObject0.m */,
+				A9906B831CD30B80000DCDFE /* JRPopupViewAnimationObject1.h */,
+				A9906B841CD30B80000DCDFE /* JRPopupViewAnimationObject1.m */,
+				A9906B851CD30B80000DCDFE /* JRPopupViewConfiguration.h */,
+				A9906B861CD30B80000DCDFE /* JRPopupViewConfiguration.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		C01E621215963A136292FD0574C7CDFB /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				6E11DDD88B8C270C58C1AAB734071398 /* Classes */,
+				A9906B7B1CD30B80000DCDFE /* Classes */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
@@ -429,17 +446,18 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9906B671CD2FF08000DCDFE /* JRPopupViewAnimationObject0.h in Headers */,
 				A7F9AAC65FC2D87C34EA9D6A5ACB4401 /* FBSnapshotTestCase.h in Headers */,
+				A9906B9B1CD30B80000DCDFE /* JRPopupViewAnimationObject0.h in Headers */,
+				A9906BA41CD30B80000DCDFE /* JRPopupViewAnimationObject1.h in Headers */,
 				2696638529960E774A76D99A13D595BB /* FBSnapshotTestCasePlatform.h in Headers */,
 				3FF33EF2BEA328811C6BC7C97A9776A3 /* FBSnapshotTestController.h in Headers */,
 				125E9AB8D9F3FA41A578627E57C1B37A /* UIApplication+StrictKeyWindow.h in Headers */,
-				A9906B511CD2FC6A000DCDFE /* JRPopupViewAnimationObject.h in Headers */,
 				E44BA8216CB73A40822467A02D7D847B /* UIImage+Compare.h in Headers */,
-				A98BD2671CBCB7C00012E153 /* JRPopupViewConfiguration.h in Headers */,
 				AEBA7273A59F2B043A31661C1CB1604C /* UIImage+Diff.h in Headers */,
-				A98BD23A1A54C8A70012E153 /* JRPopupView.h in Headers */,
+				A9906B891CD30B80000DCDFE /* JRPopupView.h in Headers */,
 				C5C081A0337FC266B8C37E0D858AB743 /* UIImage+Snapshot.h in Headers */,
+				A9906B921CD30B80000DCDFE /* JRPopupViewAnimationObject.h in Headers */,
+				A9906BAD1CD30B80000DCDFE /* JRPopupViewConfiguration.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,11 +465,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9906B541CD2FC6A000DCDFE /* JRPopupViewAnimationObject.h in Headers */,
-				A9906B6A1CD2FF08000DCDFE /* JRPopupViewAnimationObject0.h in Headers */,
-				A98BD23D1A54C8A70012E153 /* JRPopupView.h in Headers */,
+				A9906B8C1CD30B80000DCDFE /* JRPopupView.h in Headers */,
+				A9906B9E1CD30B80000DCDFE /* JRPopupViewAnimationObject0.h in Headers */,
 				754922AB0BE2CD673BED96D0306FBEFC /* Pods-JRPopupView_Tests-umbrella.h in Headers */,
-				A98BD26A1CBCB7C00012E153 /* JRPopupViewConfiguration.h in Headers */,
+				A9906BA71CD30B80000DCDFE /* JRPopupViewAnimationObject1.h in Headers */,
+				A9906B951CD30B80000DCDFE /* JRPopupViewAnimationObject.h in Headers */,
+				A9906BB01CD30B80000DCDFE /* JRPopupViewConfiguration.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,11 +478,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9906B531CD2FC6A000DCDFE /* JRPopupViewAnimationObject.h in Headers */,
-				A9906B691CD2FF08000DCDFE /* JRPopupViewAnimationObject0.h in Headers */,
-				A98BD23C1A54C8A70012E153 /* JRPopupView.h in Headers */,
+				A9906B8B1CD30B80000DCDFE /* JRPopupView.h in Headers */,
+				A9906B9D1CD30B80000DCDFE /* JRPopupViewAnimationObject0.h in Headers */,
 				9B017D4CBA217226649A1C5981B14631 /* Pods-JRPopupView_Example-umbrella.h in Headers */,
-				A98BD2691CBCB7C00012E153 /* JRPopupViewConfiguration.h in Headers */,
+				A9906BA61CD30B80000DCDFE /* JRPopupViewAnimationObject1.h in Headers */,
+				A9906B941CD30B80000DCDFE /* JRPopupViewAnimationObject.h in Headers */,
+				A9906BAF1CD30B80000DCDFE /* JRPopupViewConfiguration.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,11 +491,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9906B521CD2FC6A000DCDFE /* JRPopupViewAnimationObject.h in Headers */,
-				A9906B681CD2FF08000DCDFE /* JRPopupViewAnimationObject0.h in Headers */,
-				A98BD23B1A54C8A70012E153 /* JRPopupView.h in Headers */,
+				A9906B8A1CD30B80000DCDFE /* JRPopupView.h in Headers */,
+				A9906B9C1CD30B80000DCDFE /* JRPopupViewAnimationObject0.h in Headers */,
 				3EDAF8A0F26C22C6B4DAFA34524FD0C8 /* JRPopupView-umbrella.h in Headers */,
-				A98BD2681CBCB7C00012E153 /* JRPopupViewConfiguration.h in Headers */,
+				A9906BA51CD30B80000DCDFE /* JRPopupViewAnimationObject1.h in Headers */,
+				A9906B931CD30B80000DCDFE /* JRPopupViewAnimationObject.h in Headers */,
+				A9906BAE1CD30B80000DCDFE /* JRPopupViewConfiguration.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,6 +629,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E1962F75DB8048B933D0A421033555A /* JRPopupView.bundle in Resources */,
+				A9906B871CD30B80000DCDFE /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,6 +637,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9906B881CD30B80000DCDFE /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,11 +648,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A98BD26C1CBCB7C00012E153 /* JRPopupViewConfiguration.m in Sources */,
-				A9906B6C1CD2FF08000DCDFE /* JRPopupViewAnimationObject0.m in Sources */,
-				A9906B561CD2FC6A000DCDFE /* JRPopupViewAnimationObject.m in Sources */,
+				A9906BB21CD30B80000DCDFE /* JRPopupViewConfiguration.m in Sources */,
+				A9906B971CD30B80000DCDFE /* JRPopupViewAnimationObject.m in Sources */,
 				F3928B95319E68F3C1EDD99E85553807 /* JRPopupView-dummy.m in Sources */,
-				A98BD23F1A54C8A70012E153 /* JRPopupView.m in Sources */,
+				A9906BA01CD30B80000DCDFE /* JRPopupViewAnimationObject0.m in Sources */,
+				A9906BA91CD30B80000DCDFE /* JRPopupViewAnimationObject1.m in Sources */,
+				A9906B8E1CD30B80000DCDFE /* JRPopupView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,11 +661,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A98BD26E1CBCB7C00012E153 /* JRPopupViewConfiguration.m in Sources */,
-				A9906B6E1CD2FF08000DCDFE /* JRPopupViewAnimationObject0.m in Sources */,
-				A9906B581CD2FC6A000DCDFE /* JRPopupViewAnimationObject.m in Sources */,
+				A9906BB41CD30B80000DCDFE /* JRPopupViewConfiguration.m in Sources */,
+				A9906B991CD30B80000DCDFE /* JRPopupViewAnimationObject.m in Sources */,
 				005C7527B42FB5B392AF2D7833A69A79 /* Pods-JRPopupView_Example-dummy.m in Sources */,
-				A98BD2411A54C8A70012E153 /* JRPopupView.m in Sources */,
+				A9906BA21CD30B80000DCDFE /* JRPopupViewAnimationObject0.m in Sources */,
+				A9906BAB1CD30B80000DCDFE /* JRPopupViewAnimationObject1.m in Sources */,
+				A9906B901CD30B80000DCDFE /* JRPopupView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,11 +674,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A98BD26F1CBCB7C00012E153 /* JRPopupViewConfiguration.m in Sources */,
-				A9906B6F1CD2FF08000DCDFE /* JRPopupViewAnimationObject0.m in Sources */,
-				A9906B591CD2FC6A000DCDFE /* JRPopupViewAnimationObject.m in Sources */,
+				A9906BB51CD30B80000DCDFE /* JRPopupViewConfiguration.m in Sources */,
+				A9906B9A1CD30B80000DCDFE /* JRPopupViewAnimationObject.m in Sources */,
 				94BF031482A9852D4B0B292C0F641239 /* Pods-JRPopupView_Tests-dummy.m in Sources */,
-				A98BD2421A54C8A70012E153 /* JRPopupView.m in Sources */,
+				A9906BA31CD30B80000DCDFE /* JRPopupViewAnimationObject0.m in Sources */,
+				A9906BAC1CD30B80000DCDFE /* JRPopupViewAnimationObject1.m in Sources */,
+				A9906B911CD30B80000DCDFE /* JRPopupView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,18 +688,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				E529CF6315E6EB33FBA413EDC4BD9CF7 /* FBSnapshotTestCase-dummy.m in Sources */,
-				A98BD23E1A54C8A70012E153 /* JRPopupView.m in Sources */,
-				A98BD26B1CBCB7C00012E153 /* JRPopupViewConfiguration.m in Sources */,
+				A9906B8D1CD30B80000DCDFE /* JRPopupView.m in Sources */,
+				A9906BB11CD30B80000DCDFE /* JRPopupViewConfiguration.m in Sources */,
+				A9906B9F1CD30B80000DCDFE /* JRPopupViewAnimationObject0.m in Sources */,
 				BD3C7ABB0598A03B729F141633113043 /* FBSnapshotTestCase.m in Sources */,
 				94FDCD720E559DF4C535B3A8E93080C3 /* FBSnapshotTestCasePlatform.m in Sources */,
 				58CA52BCED9F6E2A9CCE4DF19E873D3E /* FBSnapshotTestController.m in Sources */,
+				A9906B961CD30B80000DCDFE /* JRPopupViewAnimationObject.m in Sources */,
 				8DECB970785FCBAB4A6315DAA0DB0DF2 /* SwiftSupport.swift in Sources */,
 				E5EFBFEA24204492935B2FB2BA7D21B6 /* UIApplication+StrictKeyWindow.m in Sources */,
 				500CFFB619BA25FB57B6AF48F8CCD8F3 /* UIImage+Compare.m in Sources */,
-				A9906B551CD2FC6A000DCDFE /* JRPopupViewAnimationObject.m in Sources */,
+				A9906BA81CD30B80000DCDFE /* JRPopupViewAnimationObject1.m in Sources */,
 				3C85E62EBD0D660C3DB557FABF9B8E10 /* UIImage+Diff.m in Sources */,
 				90B7E2F40E17730F3E28449559B458E0 /* UIImage+Snapshot.m in Sources */,
-				A9906B6B1CD2FF08000DCDFE /* JRPopupViewAnimationObject0.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,10 +708,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9906B571CD2FC6A000DCDFE /* JRPopupViewAnimationObject.m in Sources */,
-				A98BD26D1CBCB7C00012E153 /* JRPopupViewConfiguration.m in Sources */,
-				A9906B6D1CD2FF08000DCDFE /* JRPopupViewAnimationObject0.m in Sources */,
-				A98BD2401A54C8A70012E153 /* JRPopupView.m in Sources */,
+				A9906B8F1CD30B80000DCDFE /* JRPopupView.m in Sources */,
+				A9906B981CD30B80000DCDFE /* JRPopupViewAnimationObject.m in Sources */,
+				A9906BA11CD30B80000DCDFE /* JRPopupViewAnimationObject0.m in Sources */,
+				A9906BB31CD30B80000DCDFE /* JRPopupViewConfiguration.m in Sources */,
+				A9906BAA1CD30B80000DCDFE /* JRPopupViewAnimationObject1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,7 +14,7 @@
 {
     UIWindow* window=[[UIApplication sharedApplication] keyWindow];
     
-    UIImageView* imageView=[self getImageView];
+    UIImageView* imageView=[self snapshotImageView];
     CGSize size=self.popupView.bounds.size;
     imageView.bounds=CGRectMake(0, 0, size.width*1.5, size.height*1.5);
     [self.popupView addSubview:imageView];
@@ -37,7 +37,7 @@
 {
     UIWindow* window=[[UIApplication sharedApplication] keyWindow];
 
-    UIImageView* imageView=[self getImageView];
+    UIImageView* imageView=[self snapshotImageView];
     CGSize size=self.popupView.bounds.size;
     imageView.bounds=CGRectMake(0, 0, size.width, size.height);
     [self.popupView addSubview:imageView];
@@ -51,27 +51,6 @@
         [imageView removeFromSuperview];
         completion();
     }];
-}
-
--(UIImageView*)getImageView
-{
-    UIImage* image=[self captureImage];
-    UIImageView* imageView=[[UIImageView alloc] initWithImage:image];
-    imageView.contentMode=UIViewContentModeScaleToFill;
-    CGSize size=self.popupView.bounds.size;
-    CGPoint origin=self.popupView.bounds.origin;
-    imageView.center=CGPointMake(origin.x+size.width/2, origin.y+size.height/2);
-    return imageView;
-}
-
--(UIImage*)captureImage
-{
-    UIGraphicsBeginImageContext(self.popupView.contentView.bounds.size);
-    CGContextRef context=UIGraphicsGetCurrentContext();
-    [self.popupView.contentView.layer renderInContext:context];
-    UIImage* image=UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return image;
 }
 
 @end

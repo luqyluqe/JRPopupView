@@ -15,4 +15,6 @@
 -(void)animateShow;
 -(void)animateDismissWithCompletion:(void(^)())completion;
 
+-(UIImageView*)snapshotImageView;
+
 @end
