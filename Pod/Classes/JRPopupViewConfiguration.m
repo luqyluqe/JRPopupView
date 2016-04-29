@@ -14,6 +14,7 @@
 {
     JRPopupViewConfiguration* config=[[JRPopupViewConfiguration alloc] init];
     config.cornerRadius=8;
+    config.animation=JRPopupViewAnimation0;
     return config;
 }
 

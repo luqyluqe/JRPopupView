@@ -11,6 +11,8 @@
 @interface JRPopupView : UIView
 
 @property (nonatomic,strong) JRPopupViewConfiguration* configuration;
+@property (nonatomic,strong) UIView* maskView;
+@property (nonatomic,strong) UIView* contentView;
 
 -(instancetype)initWithContentView:(UIView*)contentView;
 -(instancetype)initWithContentView:(UIView *)contentView configuration:(JRPopupViewConfiguration*)configuration;
