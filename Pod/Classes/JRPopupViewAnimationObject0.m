@@ -24,7 +24,15 @@
     self.popupView.center=CGPointMake(window.center.x, window.center.y-100);
     self.popupView.alpha=0;
     
-    [UIView animateWithDuration:0.5 animations:^{
+//    [UIView animateWithDuration:0.5 animations:^{
+//        self.popupView.maskView.alpha=0.5;
+//        self.popupView.center=window.center;
+//        self.popupView.alpha=1;
+//        imageView.bounds=CGRectMake(0, 0, size.width, size.height);
+//    } completion:^(BOOL finished) {
+//        [imageView removeFromSuperview];
+//    }];
+    [UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0 options:0 animations:^{
         self.popupView.maskView.alpha=0.5;
         self.popupView.center=window.center;
         self.popupView.alpha=1;

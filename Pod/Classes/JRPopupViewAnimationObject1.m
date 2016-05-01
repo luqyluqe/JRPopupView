@@ -33,7 +33,7 @@
     self.popupView.maskView.alpha=0;
     self.popupView.alpha=0;
     
-    [UIView animateWithDuration:0.5 animations:^{
+    [UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0 options:0 animations:^{
         self.popupView.maskView.alpha=0.5;
         self.popupView.alpha=1;
         self.popupView.center=self.toCenter;
