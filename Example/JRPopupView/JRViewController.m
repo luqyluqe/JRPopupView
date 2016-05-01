@@ -35,12 +35,12 @@
     label.text=@"JRPopupView";
     [contentView addSubview:label];
     JRPopupViewConfiguration* config=[JRPopupViewConfiguration defaultConfiguration];
-//    JRPopupViewAnimationObject0* animation0=[JRPopupViewAnimationObject0 new];
+    JRPopupViewAnimationObject0* animation0=[JRPopupViewAnimationObject0 new];
     JRPopupViewAnimationObject1* animation1=[JRPopupViewAnimationObject1 new];
     animation1.anchor=CGPointMake(150, 0);
     animation1.fromScale=0.1;
     animation1.toCenter=CGPointMake(150, 150);
-    config.animation=animation1;
+    config.animation=animation0;
     self.popupView=[[JRPopupView alloc] initWithContentView:contentView configuration:config];
 }
 

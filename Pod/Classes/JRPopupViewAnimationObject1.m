@@ -52,7 +52,7 @@
     [self.popupView addSubview:imageView];
     self.popupView.contentView.hidden=YES;
     
-    [UIView animateWithDuration:0.5 animations:^{
+    [UIView animateWithDuration:0.3 animations:^{
         self.popupView.maskView.alpha=0;
         self.popupView.center=[self fromCenter];
         self.popupView.bounds=CGRectMake(0, 0, _size.width*self.fromScale, _size.height*self.fromScale);
