@@ -22,33 +22,35 @@
 
 -(void)animateShow
 {
-    UIImageView* imageView=[self snapshotImageView];
-    self.popupView.bounds=CGRectMake(0, 0, _size.width*self.fromScale, _size.height*self.fromScale);
-    self.popupView.contentView.hidden=YES;
-    imageView.frame=CGRectMake(0, 0, _size.width*self.fromScale, _size.height*self.fromScale);
-    [self.popupView addSubview:imageView];
     self.popupView.center=[self fromCenter];
     
     self.popupView.maskView.alpha=0;
     self.popupView.alpha=0;
     
-    [UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0 options:0 animations:^{
+    [UIView animateWithDuration:0.7 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0 options:0 animations:^{
         self.popupView.maskView.alpha=0.2;
         self.popupView.alpha=1;
         self.popupView.center=self.toCenter;
-        self.popupView.bounds=CGRectMake(0, 0, _size.width, _size.height);
-        imageView.frame=CGRectMake(0, 0, _size.width, _size.height);
     } completion:^(BOOL finished) {
-        [imageView removeFromSuperview];
-        self.popupView.contentView.hidden=NO;
     }];
+    
+    CAKeyframeAnimation* animation=[CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
+    if (self.fromScale>1) {
+        animation.values=@[@(self.fromScale),@0.9,@1.05,@0.975,@1.0];
+    }else{
+        animation.values=@[@(self.fromScale),@1.1,@0.95,@1.025,@1.0];
+    }
+    animation.keyTimes=@[@0,@0.25,@0.5,@0.75,@1.0];
+    animation.timingFunctions=@[[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn],[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn],[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn],[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn]];
+    animation.duration=0.7;
+    [self.popupView.layer addAnimation:animation forKey:nil];
 }
 
 -(void)animateDismissWithCompletion:(void(^)())completion
 {
-    UIImageView* imageView=[self snapshotImageView];
-    imageView.frame=CGRectMake(0, 0, _size.width, _size.height);
-    [self.popupView addSubview:imageView];
+    UIImageView* snapshotView=[self snapshotImageView];
+    snapshotView.frame=CGRectMake(0, 0, _size.width, _size.height);
+    [self.popupView addSubview:snapshotView];
     self.popupView.contentView.hidden=YES;
     
     [UIView animateWithDuration:0.3 animations:^{
@@ -56,10 +58,10 @@
         self.popupView.center=[self fromCenter];
         self.popupView.bounds=CGRectMake(0, 0, _size.width*self.fromScale, _size.height*self.fromScale);
         self.popupView.contentView.frame=CGRectMake(0, 0, _size.width*self.fromScale, _size.height*self.fromScale);
-        imageView.frame=CGRectMake(0, 0, _size.width*self.fromScale, _size.height*self.fromScale);
+        snapshotView.frame=CGRectMake(0, 0, _size.width*self.fromScale, _size.height*self.fromScale);
         self.popupView.alpha=0;
     } completion:^(BOOL finished) {
-        [imageView removeFromSuperview];
+        [snapshotView removeFromSuperview];
         [self reset];
         completion();
     }];
