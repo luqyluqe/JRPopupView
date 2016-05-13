@@ -27,9 +27,9 @@
     }];
     
     CAKeyframeAnimation* animation=[CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
-    animation.values=@[@1.5,@0.8,@1.1,@0.95,@1.0];
-    animation.keyTimes=@[@0,@0.25,@0.5,@0.75,@1.0];
-    animation.timingFunctions=@[[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn],[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn],[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn],[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn]];
+    animation.values=@[@1.5,@1,@0.8,@1,@1.1,@1,@0.95,@1];
+    animation.keyTimes=@[@0,@(1.0/7),@(2.0/7),@(3.0/7),@(4.0/7),@(5.0/7),@(6.0/7),@1];
+    animation.timingFunctions=@[[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut],[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn],[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut],[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn],[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut],[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn],[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut]];
     animation.duration=0.7;
     [self.popupView.layer addAnimation:animation forKey:nil];
 }

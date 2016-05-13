@@ -24,24 +24,35 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor=[UIColor whiteColor];
-    UIView* contentView=[[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 300)];
+    UIView* contentView=[[UIView alloc] initWithFrame:CGRectMake(0, 0, 240, 120)];
     contentView.backgroundColor=[UIColor whiteColor];
-    UILabel* label=[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 40)];
-    label.textAlignment=NSTextAlignmentCenter;
+    UILabel* label=[[UILabel alloc] initWithFrame:CGRectMake(20, 10, 200, 100)];
+    label.numberOfLines=0;
+    label.textColor=[UIColor darkGrayColor];
+    label.font=[UIFont systemFontOfSize:12];
     CGRect contentViewBounds=contentView.bounds;
     CGPoint contentViewOrigin=contentViewBounds.origin;
     CGSize contentViewSize=contentViewBounds.size;
     label.center=CGPointMake(contentViewOrigin.x+contentViewSize.width/2, contentViewOrigin.y+contentViewSize.height/2);
-    label.text=@"JRPopupView";
-    [contentView addSubview:label];
+    label.text=[NSString stringWithFormat:@"%@\n%@\n%@\n%@\n%@\n%@",
+                @"Long walks at night",
+                @"that's what good for the soul",
+                @"peeking into windows",
+                @"watching tired housewives",
+                @"trying to fight off",
+                @"their beer-maddened husbands"];
+     [contentView addSubview:label];
     JRPopupViewConfiguration* config=[JRPopupViewConfiguration defaultConfiguration];
     JRPopupViewAnimationObject0* animation0=[JRPopupViewAnimationObject0 new];
     JRPopupViewAnimationObject1* animation1=[JRPopupViewAnimationObject1 new];
     animation1.anchor=CGPointMake(150, 20);
     animation1.fromScale=0.1;
     animation1.toCenter=CGPointMake(150, 200);
-    config.animation=animation1;
+    config.animation=animation0;
     self.popupView=[[JRPopupView alloc] initWithContentView:contentView configuration:config];
+    
+    [self.popupView performSelector:@selector(show) withObject:nil afterDelay:2];
+    [self.popupView performSelector:@selector(dismiss) withObject:nil afterDelay:4];
 }
 
 -(void)viewDidAppear:(BOOL)animated
