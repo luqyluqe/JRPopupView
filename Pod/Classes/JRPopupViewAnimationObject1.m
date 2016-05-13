@@ -36,12 +36,12 @@
     
     CAKeyframeAnimation* animation=[CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
     if (self.fromScale>1) {
-        animation.values=@[@(self.fromScale),@1,@0.9,@1,@1.05,@1,@0.975,@1.0];
+        animation.values=@[@(self.fromScale),@0.9,@1.05,@0.975,@1.0];
     }else{
-        animation.values=@[@(self.fromScale),@1,@1.1,@1,@0.95,@1,@1.025,@1.0];
+        animation.values=@[@(self.fromScale),@1.1,@0.95,@1.025,@1.0];
     }
-    animation.keyTimes=@[@0,@(1.0/7),@(2.0/7),@(3.0/7),@(4.0/7),@(5.0/7),@(6.0/7),@1];
-    animation.timingFunctions=@[[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut],[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn],[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut],[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn],[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut],[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn],[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut]];
+    animation.keyTimes=@[@0,@0.25,@0.5,@0.75,@1.0];
+    animation.timingFunctions=@[[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn],[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn],[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn],[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn]];
     animation.duration=0.7;
     [self.popupView.layer addAnimation:animation forKey:nil];
 }
