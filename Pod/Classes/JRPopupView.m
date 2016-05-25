@@ -54,6 +54,12 @@
     [self.configuration.animation animateShow];
 }
 
+-(void)showInView:(UIView *)view
+{
+    [view addSubview:self];
+    [self.configuration.animation animateShow];
+}
+
 -(void)dismiss
 {
     [self.configuration.animation animateDismissWithCompletion:^{

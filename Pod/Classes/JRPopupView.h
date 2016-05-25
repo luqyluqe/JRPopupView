@@ -18,6 +18,7 @@
 -(instancetype)initWithContentView:(UIView *)contentView configuration:(JRPopupViewConfiguration*)configuration;
 
 -(void)show;
+-(void)showInView:(UIView*)view;
 -(void)dismiss;
 
 @end
