@@ -32,9 +32,13 @@
         self.configuration=configuration;
         self.maskView=[[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
         self.maskView.backgroundColor=configuration.maskViewColor?:[UIColor grayColor];
-        UITapGestureRecognizer* tapRecog=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(maskViewTapped:)];
-        [self.maskView addGestureRecognizer:tapRecog];
+        self.maskView.alpha=configuration.maskViewOpacity;
+        if ([configuration tapMaskViewToDismiss]) {
+            UITapGestureRecognizer* tapRecog=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(maskViewTapped:)];
+            [self.maskView addGestureRecognizer:tapRecog];
+        }
         self.configuration.animation.popupView=self;
+        self.layer.shadowOffset=configuration.shadowOffset;
         self.layer.shadowOpacity=configuration.shadowOpacity;
         self.layer.shadowRadius=configuration.shadowRadius;
         if (configuration.shadowColor) {

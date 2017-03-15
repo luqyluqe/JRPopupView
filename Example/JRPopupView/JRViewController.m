@@ -43,6 +43,8 @@
                 @"their beer-maddened husbands"];
      [contentView addSubview:label];
     JRPopupViewConfiguration* config=[JRPopupViewConfiguration defaultConfiguration];
+    config.maskViewColor=[UIColor blackColor];
+    config.maskViewOpacity=0.8;
     JRPopupViewAnimationObject0* animation0=[JRPopupViewAnimationObject0 new];
     JRPopupViewAnimationObject1* animation1=[JRPopupViewAnimationObject1 new];
     animation1.anchor=CGPointMake(150, 20);
