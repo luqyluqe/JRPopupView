@@ -26,6 +26,7 @@
 -(instancetype)initWithContentView:(UIView *)contentView configuration:(JRPopupViewConfiguration *)configuration
 {
     if (self=[super initWithFrame:contentView.frame]) {
+        contentView.frame=self.bounds;
         [self addSubview:contentView];
         self.contentView=contentView;
         self.contentView.layer.cornerRadius=configuration.cornerRadius;
@@ -61,15 +62,22 @@
 -(void)showInView:(UIView *)view
 {
     [view addSubview:self];
-    [self.configuration.animation animateShow];
+    if ([self.configuration.animation respondsToSelector:@selector(animateShow)]) {
+        [self.configuration.animation animateShow];
+    }
 }
 
 -(void)dismiss
 {
-    [self.configuration.animation animateDismissWithCompletion:^{
+    if ([self.configuration.animation respondsToSelector:@selector(animateDismissWithCompletion:)]) {
+        [self.configuration.animation animateDismissWithCompletion:^{
+            [self.maskView removeFromSuperview];
+            [self removeFromSuperview];
+        }];
+    }else{
         [self.maskView removeFromSuperview];
         [self removeFromSuperview];
-    }];
+    }
 }
 
 -(void)maskViewTapped:(UIView*)maskView

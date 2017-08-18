@@ -31,6 +31,7 @@
 		A901B52E1CD32C5A0042D871 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A901B51F1CD32C590042D871 /* Info.plist */; };
 		A901B52F1CD32C5A0042D871 /* JRPopupView.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A901B5211CD32C590042D871 /* JRPopupView.xcconfig */; };
 		A901B5301CD32C5A0042D871 /* JRPopupView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A901B5221CD32C590042D871 /* JRPopupView-dummy.m */; };
+		C5834CFE1F4696B200066425 /* JRPopupViewAnimationObject2.m in Sources */ = {isa = PBXBuildFile; fileRef = C5834CFD1F4696B200066425 /* JRPopupViewAnimationObject2.m */; };
 		DCA5FF29CE239A75659283DB /* Pods_JRPopupView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2345588CAC0FAB905DB8E2AF /* Pods_JRPopupView_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,8 @@
 		A901B5231CD32C590042D871 /* JRPopupView-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JRPopupView-prefix.pch"; sourceTree = "<group>"; };
 		A901B5241CD32C590042D871 /* JRPopupView-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JRPopupView-umbrella.h"; sourceTree = "<group>"; };
 		B2253B58F898AC653A87ADFE /* Pods-JRPopupView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRPopupView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JRPopupView_Example/Pods-JRPopupView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C5834CFC1F4696B200066425 /* JRPopupViewAnimationObject2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPopupViewAnimationObject2.h; sourceTree = "<group>"; };
+		C5834CFD1F4696B200066425 /* JRPopupViewAnimationObject2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPopupViewAnimationObject2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +226,8 @@
 				A901B51A1CD32C590042D871 /* JRPopupViewAnimationObject1.m */,
 				A901B51B1CD32C590042D871 /* JRPopupViewConfiguration.h */,
 				A901B51C1CD32C590042D871 /* JRPopupViewConfiguration.m */,
+				C5834CFC1F4696B200066425 /* JRPopupViewAnimationObject2.h */,
+				C5834CFD1F4696B200066425 /* JRPopupViewAnimationObject2.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -479,6 +484,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5834CFE1F4696B200066425 /* JRPopupViewAnimationObject2.m in Sources */,
 				A901B52D1CD32C5A0042D871 /* JRPopupViewConfiguration.m in Sources */,
 				A901B52C1CD32C5A0042D871 /* JRPopupViewAnimationObject1.m in Sources */,
 				6003F59E195388D20070C39A /* JRAppDelegate.m in Sources */,

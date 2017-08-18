@@ -10,6 +10,7 @@
 #import "JRPopupView.h"
 #import "JRPopupViewAnimationObject0.h"
 #import "JRPopupViewAnimationObject1.h"
+#import "JRPopupViewAnimationObject2.h"
 
 @interface JRViewController ()
 
@@ -25,6 +26,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor=[UIColor whiteColor];
     UIView* contentView=[[UIView alloc] initWithFrame:CGRectMake(0, 0, 240, 120)];
+    contentView.center=CGPointMake(self.view.bounds.size.width/2., self.view.bounds.size.height/2.);
     contentView.backgroundColor=[UIColor whiteColor];
     UILabel* label=[[UILabel alloc] initWithFrame:CGRectMake(20, 10, 200, 100)];
     label.numberOfLines=0;
@@ -45,16 +47,17 @@
     JRPopupViewConfiguration* config=[JRPopupViewConfiguration defaultConfiguration];
     config.maskViewColor=[UIColor blackColor];
     config.maskViewOpacity=0.8;
-    JRPopupViewAnimationObject0* animation0=[JRPopupViewAnimationObject0 new];
-    JRPopupViewAnimationObject1* animation1=[JRPopupViewAnimationObject1 new];
-    animation1.anchor=CGPointMake(150, 20);
-    animation1.fromScale=0.1;
-    animation1.toCenter=CGPointMake(150, 200);
-    config.animation=animation0;
+//    JRPopupViewAnimationObject0* animation0=[JRPopupViewAnimationObject0 new];
+//    JRPopupViewAnimationObject1* animation1=[JRPopupViewAnimationObject1 new];
+//    animation1.anchor=CGPointMake(150, 20);
+//    animation1.fromScale=0.1;
+//    animation1.toCenter=CGPointMake(150, 200);
+    JRPopupViewAnimationObject2* animation2=[JRPopupViewAnimationObject2 new];
+    config.animation=animation2;
     self.popupView=[[JRPopupView alloc] initWithContentView:contentView configuration:config];
     
-    [self.popupView performSelector:@selector(show) withObject:nil afterDelay:2];
-    [self.popupView performSelector:@selector(dismiss) withObject:nil afterDelay:4];
+//    [self.popupView performSelector:@selector(show) withObject:nil afterDelay:2];
+//    [self.popupView performSelector:@selector(dismiss) withObject:nil afterDelay:4];
 }
 
 -(void)viewDidAppear:(BOOL)animated

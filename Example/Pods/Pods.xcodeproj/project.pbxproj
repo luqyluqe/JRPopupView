@@ -77,6 +77,8 @@
 		AE8D7BDEF2AC1133B9B8A6A52D83EC04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31B096AB4A0164C61B63F0E59AD76C9 /* Foundation.framework */; };
 		AEBA7273A59F2B043A31661C1CB1604C /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 384A1B103C9D183D6A1C08DD450C61CA /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		BD3C7ABB0598A03B729F141633113043 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FE25CB0990A912973D24121C151E6A /* FBSnapshotTestCase.m */; };
+		C5834CFA1F4696AB00066425 /* JRPopupViewAnimationObject2.h in Headers */ = {isa = PBXBuildFile; fileRef = C5834CF81F4696AB00066425 /* JRPopupViewAnimationObject2.h */; };
+		C5834CFB1F4696AB00066425 /* JRPopupViewAnimationObject2.m in Sources */ = {isa = PBXBuildFile; fileRef = C5834CF91F4696AB00066425 /* JRPopupViewAnimationObject2.m */; };
 		C5C081A0337FC266B8C37E0D858AB743 /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 175E07AEBDAD15ABC9427FE1FC5774C5 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		D9D4A4B3CFAEE3A7D9180B492D2F000B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31B096AB4A0164C61B63F0E59AD76C9 /* Foundation.framework */; };
 		E44BA8216CB73A40822467A02D7D847B /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 758DA1CBC128A58D65023AE2318D1257 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -173,6 +175,8 @@
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BEF5253333691011CD36CDD6D067E09E /* Pods-JRPopupView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JRPopupView_Example-umbrella.h"; sourceTree = "<group>"; };
 		C00F2615DF9E417110BD53531B78C095 /* Pods-JRPopupView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JRPopupView_Example-resources.sh"; sourceTree = "<group>"; };
+		C5834CF81F4696AB00066425 /* JRPopupViewAnimationObject2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPopupViewAnimationObject2.h; sourceTree = "<group>"; };
+		C5834CF91F4696AB00066425 /* JRPopupViewAnimationObject2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPopupViewAnimationObject2.m; sourceTree = "<group>"; };
 		C75D1274C84E4AF908836016AA6A1B3A /* JRPopupView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JRPopupView-umbrella.h"; sourceTree = "<group>"; };
 		CD9224AD343A9456F0D12695DF9141B2 /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		D17117C23FE53FF87732FB4B40A88380 /* Pods_JRPopupView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JRPopupView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -376,6 +380,8 @@
 				A9906B841CD30B80000DCDFE /* JRPopupViewAnimationObject1.m */,
 				A9906B851CD30B80000DCDFE /* JRPopupViewConfiguration.h */,
 				A9906B861CD30B80000DCDFE /* JRPopupViewConfiguration.m */,
+				C5834CF81F4696AB00066425 /* JRPopupViewAnimationObject2.h */,
+				C5834CF91F4696AB00066425 /* JRPopupViewAnimationObject2.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -493,6 +499,7 @@
 			files = (
 				A9906B8A1CD30B80000DCDFE /* JRPopupView.h in Headers */,
 				A9906B9C1CD30B80000DCDFE /* JRPopupViewAnimationObject0.h in Headers */,
+				C5834CFA1F4696AB00066425 /* JRPopupViewAnimationObject2.h in Headers */,
 				3EDAF8A0F26C22C6B4DAFA34524FD0C8 /* JRPopupView-umbrella.h in Headers */,
 				A9906BA51CD30B80000DCDFE /* JRPopupViewAnimationObject1.h in Headers */,
 				A9906B931CD30B80000DCDFE /* JRPopupViewAnimationObject.h in Headers */,
@@ -654,6 +661,7 @@
 				A9906BA01CD30B80000DCDFE /* JRPopupViewAnimationObject0.m in Sources */,
 				A9906BA91CD30B80000DCDFE /* JRPopupViewAnimationObject1.m in Sources */,
 				A9906B8E1CD30B80000DCDFE /* JRPopupView.m in Sources */,
+				C5834CFB1F4696AB00066425 /* JRPopupViewAnimationObject2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
