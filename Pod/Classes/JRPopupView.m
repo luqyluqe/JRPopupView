@@ -51,28 +51,23 @@
 
 -(void)show
 {
+    UIWindow* window=[[UIApplication sharedApplication] keyWindow];
+    [self showInView:window];
+}
+
+-(void)showInView:(UIView *)view
+{
     if ([self isShowing]) {
         return;
     }
     
-    UIWindow* window=[[UIApplication sharedApplication] keyWindow];
-    
-    [window addSubview:self.maskView];
-    [window addSubview:self];
-    
+    [view addSubview:self.maskView];
+    [view addSubview:self];
     if ([self.configuration.animation respondsToSelector:@selector(animateShow)]) {
         [self.configuration.animation animateShow];
     }
     
     _showing=YES;
-}
-
--(void)showInView:(UIView *)view
-{
-    [view addSubview:self];
-    if ([self.configuration.animation respondsToSelector:@selector(animateShow)]) {
-        [self.configuration.animation animateShow];
-    }
 }
 
 -(void)dismiss
