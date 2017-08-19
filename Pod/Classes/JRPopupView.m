@@ -51,12 +51,20 @@
 
 -(void)show
 {
+    if ([self isShowing]) {
+        return;
+    }
+    
     UIWindow* window=[[UIApplication sharedApplication] keyWindow];
     
     [window addSubview:self.maskView];
     [window addSubview:self];
     
-    [self.configuration.animation animateShow];
+    if ([self.configuration.animation respondsToSelector:@selector(animateShow)]) {
+        [self.configuration.animation animateShow];
+    }
+    
+    _showing=YES;
 }
 
 -(void)showInView:(UIView *)view
@@ -69,6 +77,10 @@
 
 -(void)dismiss
 {
+    if (![self isShowing]) {
+        return;
+    }
+    
     if ([self.configuration.animation respondsToSelector:@selector(animateDismissWithCompletion:)]) {
         [self.configuration.animation animateDismissWithCompletion:^{
             [self.maskView removeFromSuperview];
@@ -78,6 +90,8 @@
         [self.maskView removeFromSuperview];
         [self removeFromSuperview];
     }
+    
+    _showing=NO;
 }
 
 -(void)maskViewTapped:(UIView*)maskView

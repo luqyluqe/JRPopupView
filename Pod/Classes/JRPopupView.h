@@ -13,6 +13,7 @@
 @property (nonatomic,strong) JRPopupViewConfiguration* configuration;
 @property (nonatomic,strong) UIView* maskView;
 @property (nonatomic,strong) UIView* contentView;
+@property (nonatomic,readonly,getter=isShowing) BOOL showing;
 
 -(instancetype)initWithContentView:(UIView*)contentView;
 -(instancetype)initWithContentView:(UIView *)contentView configuration:(JRPopupViewConfiguration*)configuration;
