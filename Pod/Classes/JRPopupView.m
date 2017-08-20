@@ -51,11 +51,21 @@
 
 -(void)show
 {
+    [self showAnimated:YES];
+}
+
+-(void)showAnimated:(BOOL)animated
+{
     UIWindow* window=[[UIApplication sharedApplication] keyWindow];
-    [self showInView:window];
+    [self showInView:window animated:animated];
 }
 
 -(void)showInView:(UIView *)view
+{
+    [self showInView:view animated:YES];
+}
+
+-(void)showInView:(UIView *)view animated:(BOOL)animated
 {
     if ([self isShowing]) {
         return;
@@ -63,7 +73,7 @@
     
     [view addSubview:self.maskView];
     [view addSubview:self];
-    if ([self.configuration.animation respondsToSelector:@selector(animateShow)]) {
+    if (animated&&[self.configuration.animation respondsToSelector:@selector(animateShow)]) {
         [self.configuration.animation animateShow];
     }
     
@@ -77,6 +87,25 @@
     }
     
     if ([self.configuration.animation respondsToSelector:@selector(animateDismissWithCompletion:)]) {
+        [self.configuration.animation animateDismissWithCompletion:^{
+            [self.maskView removeFromSuperview];
+            [self removeFromSuperview];
+        }];
+    }else{
+        [self.maskView removeFromSuperview];
+        [self removeFromSuperview];
+    }
+    
+    _showing=NO;
+}
+
+-(void)dismissAnimated:(BOOL)animated
+{
+    if (![self isShowing]) {
+        return;
+    }
+    
+    if (animated&&[self.configuration.animation respondsToSelector:@selector(animateDismissWithCompletion:)]) {
         [self.configuration.animation animateDismissWithCompletion:^{
             [self.maskView removeFromSuperview];
             [self removeFromSuperview];

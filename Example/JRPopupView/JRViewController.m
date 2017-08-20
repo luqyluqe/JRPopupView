@@ -47,13 +47,13 @@
     JRPopupViewConfiguration* config=[JRPopupViewConfiguration defaultConfiguration];
     config.maskViewColor=[UIColor blackColor];
     config.maskViewOpacity=0.8;
-//    JRPopupViewAnimationObject0* animation0=[JRPopupViewAnimationObject0 new];
+    JRPopupViewAnimationObject0* animation0=[JRPopupViewAnimationObject0 new];
 //    JRPopupViewAnimationObject1* animation1=[JRPopupViewAnimationObject1 new];
 //    animation1.anchor=CGPointMake(150, 20);
 //    animation1.fromScale=0.1;
 //    animation1.toCenter=CGPointMake(150, 200);
-    JRPopupViewAnimationObject2* animation2=[JRPopupViewAnimationObject2 new];
-    config.animation=animation2;
+//    JRPopupViewAnimationObject2* animation2=[JRPopupViewAnimationObject2 new];
+    config.animation=animation0;
     self.popupView=[[JRPopupView alloc] initWithContentView:contentView configuration:config];
     
 //    [self.popupView performSelector:@selector(show) withObject:nil afterDelay:2];

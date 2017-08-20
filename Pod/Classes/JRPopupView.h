@@ -19,7 +19,11 @@
 -(instancetype)initWithContentView:(UIView *)contentView configuration:(JRPopupViewConfiguration*)configuration;
 
 -(void)show;
+-(void)showAnimated:(BOOL)animated;
 -(void)showInView:(UIView*)view;
+-(void)showInView:(UIView *)view animated:(BOOL)animated;
+
 -(void)dismiss;
+-(void)dismissAnimated:(BOOL)animated;
 
 @end
