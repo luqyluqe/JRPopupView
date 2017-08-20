@@ -82,21 +82,7 @@
 
 -(void)dismiss
 {
-    if (![self isShowing]) {
-        return;
-    }
-    
-    if ([self.configuration.animation respondsToSelector:@selector(animateDismissWithCompletion:)]) {
-        [self.configuration.animation animateDismissWithCompletion:^{
-            [self.maskView removeFromSuperview];
-            [self removeFromSuperview];
-        }];
-    }else{
-        [self.maskView removeFromSuperview];
-        [self removeFromSuperview];
-    }
-    
-    _showing=NO;
+    [self dismissAnimated:YES];
 }
 
 -(void)dismissAnimated:(BOOL)animated
