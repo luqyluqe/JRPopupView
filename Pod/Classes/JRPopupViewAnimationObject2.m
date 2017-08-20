@@ -31,11 +31,7 @@
 
 -(void)animateShow
 {
-    if (![self isInitialized]) {
-        self.toCenter=self.popupView.center;
-        self.fromCenter=CGPointMake(self.toCenter.x, self.toCenter.y-self.popupView.frame.size.height*0.1);
-        self.initialized=YES;
-    }
+    [self initializeIfNeeded];
     self.popupView.center=self.fromCenter;
     self.popupView.maskView.alpha=0;
     self.popupView.alpha=0;
@@ -49,6 +45,7 @@
 
 -(void)animateDismissWithCompletion:(void (^)())completion
 {
+    [self initializeIfNeeded];
     [UIView animateWithDuration:self.dismissAnimationDuration animations:^{
         self.popupView.maskView.alpha=0;
         self.popupView.center=self.fromCenter;
@@ -56,6 +53,15 @@
     } completion:^(BOOL finished) {
         completion();
     }];
+}
+
+-(void)initializeIfNeeded
+{
+    if (![self isInitialized]) {
+        self.toCenter=self.popupView.center;
+        self.fromCenter=CGPointMake(self.toCenter.x, self.toCenter.y-self.popupView.frame.size.height*0.1);
+        self.initialized=YES;
+    }
 }
 
 @end
