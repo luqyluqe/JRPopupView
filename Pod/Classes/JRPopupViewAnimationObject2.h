@@ -10,7 +10,8 @@
 
 @interface JRPopupViewAnimationObject2 : JRPopupViewAnimationObject
 
-@property (nonatomic,assign) CGFloat showAnimationDuration;
-@property (nonatomic,assign) CGFloat dismissAnimationDuration;
+@property (nonatomic,assign) CGFloat translationScale;
+@property (nonatomic,assign) CFTimeInterval showAnimationDuration;
+@property (nonatomic,assign) CFTimeInterval dismissAnimationDuration;
 
 @end
